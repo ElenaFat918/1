@@ -13,7 +13,7 @@ def run():
         model.save_txt(res)         #   сохраняет в save_сontacts.txt
         
     
-    elif start == '3':              # 3 - Сохранить контакты в формате csv
+    elif start == '3':              #   3 - Сохранить контакты в формате csv
         res = model.read_txt()
         model.save_csv(res)         #   сохраняет в save_сontacts.csv
         
