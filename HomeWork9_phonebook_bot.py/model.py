@@ -12,9 +12,9 @@ def read_csv():
 def find(surname):
     sp = []
     list_csv = read_csv()
-    for i, row in enumerate(list_csv):
-        if row[0] == surname:
-            sp.append(row)
+    for i, row in enumerate(list_csv):  # поиск по строкам и столбцам 
+        if row[0] == surname:       # ищим в нулевом столбце нужную фымилию
+            sp.append(row)      #   записываем строку с данной фамилией
     return sp
     
 def add_info(list):  
